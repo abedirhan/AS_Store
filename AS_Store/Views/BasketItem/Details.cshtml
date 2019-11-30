@@ -1,0 +1,36 @@
+﻿@model AS_Store.Models.BasketItem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BasketItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBasketNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdBasketNavigation.IdBasket)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdProductNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdProductNavigation.IdProduct)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdBasketItem">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
