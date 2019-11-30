@@ -11,6 +11,7 @@ namespace AS_Store.Models
         public PatiDBContext(DbContextOptions<PatiDBContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public virtual DbSet<BasketItem> BasketItem { get; set; }

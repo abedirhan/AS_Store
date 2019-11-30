@@ -6,7 +6,7 @@ using AS_Store.Models;
 
 namespace AS_Store.Repository
 {
-    interface IProduct
+    public interface IProduct
     {
         IEnumerable<Product> GetProducts { get; }
         Product GetProduct(int? id);

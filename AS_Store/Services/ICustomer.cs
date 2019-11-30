@@ -6,7 +6,7 @@ using AS_Store.Models;
 
 namespace AS_Store.Repository
 {
-    interface ICustomer
+    public interface ICustomer
     {
         IEnumerable<Customer> GetCustomers { get; }
         Customer GetCustomer(int? id);

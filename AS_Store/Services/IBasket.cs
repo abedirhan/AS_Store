@@ -6,7 +6,7 @@ using AS_Store.Models;
 
 namespace AS_Store.Repository
 {
-    interface IBasket
+    public interface IBasket
     {
         IEnumerable<Basket> GetBaskets { get; }
         Basket GetBasket(int? id);
